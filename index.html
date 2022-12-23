@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>TIC-TAC-TOE</h1>
+    <h5>by MR.</h5>
+    <label for="player-x" class="player-x">Player "X"
+        <input type="text" class="player-x">
+    </label>
+    <label for="player-o" class="player-o">Player "O"
+        <input type="text" class="player-o">
+    </label>
+    <div class="play-table">
+        <div class="board">
+            <div class="cell" id="0"></div>
+            <div class="cell" id="1"></div>
+            <div class="cell" id="2"></div>
+            <div class="cell" id="3"></div>
+            <div class="cell" id="4"></div>
+            <div class="cell" id="5"></div>
+            <div class="cell" id="6"></div>
+            <div class="cell" id="7"></div>
+            <div class="cell" id="8"></div>
+        </div>
+        <div class="next-turn">
+            <p>Next turn: </p>
+            <span class="next-player"></span>
+        </div>
+    </div>
     
+    
+    <div class="buttons-wrapper">
+        <button class="start-game">START THE BATTLE!</button>
+        <button class="clear-board">CLEAR THE BOARD</button>
+    </div>
+    <div class="game-start-info">
+        <h2 class="who-start"></h2>
+    </div>
+    <h1 class="winner"></h1>
 </body>
 </html>

@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: skyblue;
+}
+
+.cell {
+    border: 3px solid black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: fantasy;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    margin-bottom: 40px;
+    background-color: aliceblue;
+}
+
+.blink-bg {
+    animation: blinkingBackground 2s 1;
+}
+@keyframes blinkingBackground{
+    0%		{ background-color: white}
+    100%    { background-color: #ef0a1a;}
+}
+
+@keyframes blinkingWinnerText{
+    0%		{ background-color: white}
+    25%     { background-color: rgb(163, 218, 23)}
+    50%     { background-color: rgb(43, 171, 17)}
+    75%     { background-color: rgb(17, 180, 69)}
+    100%    { background-color: #d36d1a;}
+}
+
+.disable-cell {
+    background-color: black;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: mediumspringgreen;
+}
+
+.winning-line {
+    background-color: greenyellow;
+}
+
+.not-clickable {
+    pointer-events: none;
+}
+
+label {
+    font-size: x-large;
+    font-family: fantasy;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    font-size: 25px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+
+.game-start-info {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-family: fantasy;
+    font-size: xxx-large;
+}
+
+.winner {
+    animation: blinkingWinnerText 1s infinite;
+}
+
+h2 {
+    margin: 0;
+    font-family: fantasy;
+}
+
+h5 {
+    margin-top: 0;
+    font-family: fantasy;
+}
+
+.play-table {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.next-turn {
+    font-family: fantasy;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.next-turn p {
+    margin: 0;
+}
